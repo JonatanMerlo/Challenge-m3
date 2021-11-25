@@ -5,15 +5,103 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor M3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">  <title>Desenvolvedor M3</title>
   <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-
+  <header>
+    <div class="logo">
+      <img src="./img/logo-m3.png" alt="imagen de logo">
+    </div>
+    <div class="carrito">
+      <img src="./img/image 3.png" alt="imagen de una bolsa">
+    </div>
+  </header>
+  <hr>
+  <main>
+    <div class="contenedorTituloDropdown">
+      <h2>Blusas</h2>
+      <div class="dropdown">
+        <button id='ordenarPor' class="botonFiltroYOrdenar">Ordenar por:<img src="./img/Vector 1.png" alt=""></button>
+        <div>
+          <ul id='comoOrdenar'>
+            <li>Mas recentes</li>
+            <li>Menor preço</li>
+            <li>Maior preço</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="botonesCelular">
+      <button id='ordenarPorCelular' class="botonFiltroYOrdenar">Ordenar</button>
+      <button id='filtrarCelular' class="botonFiltroYOrdenar">Filtrar</button>
+    </div>
+    <div class="contenedorFiltrosImagenes">
+      <div class="filtrar">
+        <div id="todosLosColores" class="coloresOcultos">
+          <div id="titulo">
+            <h3>CORES</h3><i class="fas fa-chevron-down"></i>
+          </div>
+          <ul id="listaColores">
+            <li><input type="checkbox" class="color" id='Amarelo' name="Amarelo"><label for="Amarelo">Amarelo</label></li>
+            <li><input type="checkbox" class="color" id='Azul' name="Azul"><label for="Azul">Azul</label></li>
+            <li><input type="checkbox" class="color" id='Branco' name="Branco"><label for="Branco">Branco</label></li>
+            <li><input type="checkbox" class="color" id='Cinza' name="Cinza"><label for="Cinza">Cinza</label></li>
+            <li><input type="checkbox" class="color" id='Laranja' name="Laranja"><label for="Laranja">Laranja</label></li>
+            <li><input type="checkbox" class="color" id='Verde' name="Verde"><label for="Verde">Verde</label></li>
+            <li><input type="checkbox" class="color" id='Vermelho' name="Vermelho"><label for="Vermelho">Vermelho</label></li>
+            <li><input type="checkbox" class="color" id='Preto' name="Preto"><label for="Preto">Preto</label></li>
+            <li><input type="checkbox" class="color" id='Rosa' name="Rosa"><label for="Rosa">Rosa</label></li>
+            <li><input type="checkbox" class="color" id='Vinho' name="Vinho"><label for="Vinho">Vinho</label></li>
+          </ul>
+        </div>
+        <p class="mostrarColores" id="mostrarColores">Ver todas as cores <img src="./img/Vector 1.png" alt=""></p>
+        <div class="tamanios">
+          <div id="titulo">
+            <h3>TAMANHOS</h3><i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="contenedorTamanios">
+            <div>P</div>
+            <div>M</div>
+            <div>G</div>
+            <div>GG</div>
+            <div>U</div>
+            <div>36</div>
+            <div>38</div>
+            <div>40</div>
+            <div>36</div>
+            <div>38</div>
+            <div>40</div>
+          </div>
+        </div>
+        <div class="gamaPrecios"> 
+          <div id="titulo">
+            <h3>FAIXA DE PREÇO</h3><i class="fas fa-chevron-down"></i>
+          </div>
+          <ul>
+            <li><input type="checkbox" name="0a50" class="precios" id="0a50"><label for="0a50">de R$0 até R$50</label></li>
+            <li><input type="checkbox" name="51a150" class="precios" id="51a150"><label for="51a150">de R$51 até R$150</label></li>
+            <li><input type="checkbox" name="151a300" class="precios" id="151a300"><label for="151a300">de R$151 até R$300</label></li>
+            <li><input type="checkbox" name="301a500" class="precios" id="301a500"><label for="301a500">de R$301 até R$500</label></li>
+            <li><input type="checkbox" name="501" class="precios" id="501"><label for="501">a partir de R$ 500</label></li>
+          </ul>
+        </div>
+        <div class="botonesAplicarLimpiar">
+          <button class="botonAplicar">APLICAR</button>
+          <button class="botonLimpiar">LIMPIAR</button>
+        </div>
+      </div>
+      <div class="contenedorImagenesBoton">
+        <div class="contenedorImagenes">
+        </div>
+        <button id="botonCargarMas">CARREGAR MAIS</button>
+      </div>
+    </div>
+  </main>
+  <footer>M3: IMPLANTAÇÃO DE E-COMMERCE VTEX</footer>
 </body>
-<h1>Desafio m3</h1>
 
-<script src="bundle.js"></script>
+<script src="bundle.js" defer></script>
 
 </html>
